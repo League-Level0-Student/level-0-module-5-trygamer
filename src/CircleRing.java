@@ -9,15 +9,40 @@ public class CircleRing {
     public static void main(String[] args) throws Exception {
 
         // 1. Make a new Robot
-
+Robot k= new Robot();
 
        //  2. Set your robot’s position to x=150 and y=200
-
+k.hide();
+k.moveTo(150, 200);
         // 3. Put the robot's pen down
-
+k.penDown();
         // 4. Set the robot’s speed to 10
-
+k.setSpeed(10);
         // 5. Do everything below here 360 times (use i as the counter)
+for(int i=1; i<361;i++ ) {
+	k.move(3);
+	
+	k.turn(1);
+	
+	if(i%20==0) {
+		
+		for(int j=1; j<361; j++) {
+			
+			k.move(1);
+			k.turn(1);
+			
+			
+			
+		}
+		
+	}
+	
+	
+	
+}
+
+
+
 
 	        // 6. Move the robot 3 pixels
 
