@@ -1,11 +1,13 @@
 import javax.swing.JOptionPane;
 
 public class PrimeorNot {
+	
+
 
 	public static void main(String[] args) {
 		
 		
-		
+		Boolean check= true;
 		
 		String x =JOptionPane.showInputDialog("Prime Calculator enter a random number");
 		
@@ -13,24 +15,51 @@ public class PrimeorNot {
 	
 	
 		
-	for(int i=0; i<x1-1; i++) {
+	for(int i=2; i<=x1; i++) {
 		
 		
-		if(i%x1==0) {
+		if(i==x1) {
+			
+			x1=-1;
+			
+		}
+		
+	else	if(x1%i==0) {
+			
+			JOptionPane.showMessageDialog(null, "It's Not Prime");
+			
+			check= false;
+			
+		break;
+			
+		}
+		
+		
+	}
+		
+		if(check==true) {
 			
 			JOptionPane.showMessageDialog(null, "It's Prime");
 			
 		}
 		
-		else {
-			JOptionPane.showMessageDialog(null, "Not Prime");
-			
-		}
 		
+	
+			
+		
+		
+	
+	
+	
+	
+	
 	}
 		
 		
 		
+	
+	
+	
 	}
 	
-}
+
