@@ -41,12 +41,14 @@ public class GuessingPi {
 				// HINT: use charAt(0) to get 1st char of user input String
 				if (getInputFromUser() == pi.charAt(i)) {
 
-					System.out.println("correct");
+					JOptionPane.showMessageDialog(null, "correct");
 
 				}
 				// 7. If they are correct, print out "correct".
 				else {
-					System.out.println("incorrect");
+					JOptionPane.showMessageDialog(null, "incorrect, start over");
+
+					break;
 
 				}
 				// 8. If they are not, print out "incorrect" and tell them
