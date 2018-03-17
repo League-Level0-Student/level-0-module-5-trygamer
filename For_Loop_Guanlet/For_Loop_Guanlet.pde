@@ -110,4 +110,37 @@ for(int i=0; i<15; i++){
        
      }
      
+     println();
      
+      for(int i=0; i<9;i+=3){
+      for(int j=1; j<=3;j++){
+        print(i+j);
+      }
+      println();
+       }
+       
+        for(int i=0; i<100;i+=10){
+          for(int j=1;j<=10;j++){
+          print(i+j);
+          }
+          println();
+        }
+       
+       
+       for(int i=0; i<=6;i++){
+         println();
+         for(int j=1; j<=i;j++){
+         print("x");
+         
+       }}
+       
+       
+       
+       for(int i=0;i>=-100;i--){
+        
+      println(i+100);
+        
+        }
+       
+       
+         
